@@ -1,0 +1,8 @@
+name,calibrationFile,hydrophone_preamplifier,connector,attenuator,gain
+HNA400-1344,h1344_p2040.txt,HNA400-1344_AH2010-2040,None,None,None
+HNA400-1344_atten,h1344_p2040_atten.txt,HNA400-1344_AH2010-2040,None,ATH-2000,None
+HNA400-1344_rightangle,h1344_p2040_rightangle.txt,HNA400-1344_AH2010-2040,rightangle,None,None
+HNA400-1344_rightangle_atten,h1344_p2040_rightangle_atten.txt,HNA400-1344_AH2010-2040,rightangle,ATH-2000,None
+HNC200-1177_rightangle,h1177_p1477_rightangle.txt,HNC200-1177_AH2010-1477,rightangle,None,None
+secret_HNA400-1393_rightangle_highgain,h1393_p1322_rightangle_highgain.txt,HNA400-1393_AH2020-1322,rightangle,None,high
+secret_HNA400-1393_rightangle_lowgain,h1393_p1322_rightangle_lowgain.txt,HNA400-1393_AH2020-1322,rightangle,None,low

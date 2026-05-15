@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile run_gage/gui/app_beammap.py)",
+      "Bash(python -m pytest run_gage/tests/ -q)"
+    ]
+  }
+}

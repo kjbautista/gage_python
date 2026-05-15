@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Binary files — no diff, no merge, no line-ending conversion
+*.pyd binary
+*.mat binary
+*.xlsx binary
+*.ipynb text eol=lf

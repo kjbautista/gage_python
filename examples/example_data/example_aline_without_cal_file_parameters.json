@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "20260421_162214",
+  "acquisition_config": {
+    "t_start_us": 0.0,
+    "t_end_us": 100.0,
+    "sample_rate_hz": 200000000.0,
+    "trigger_level_v": 2.5,
+    "input_range_v": 0.1,
+    "dc_offset_mv": 0.0,
+    "n_alines": 10,
+    "data_type": "aline",
+    "calibration_file": null,
+    "acquisition_timeout_s": null
+  },
+  "display_config": {
+    "displayed_voltage_range_v": 0.1,
+    "plot_offset_v": 0.0,
+    "freq_start_mhz": 0.0,
+    "freq_end_mhz": 10.0,
+    "lines_to_average": 3
+  },
+  "data_file": "aline_20260421_162143_1p8V_foc25_c100_pw_nocal.txt",
+  "frame_count": 10
+}

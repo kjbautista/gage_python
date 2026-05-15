@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gage"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.0,<2.0",
+    "scipy",
+    "matplotlib",
+    "PyQt6",
+    "paramiko"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["run_gage*", "read_gage*"]
+
+[tool.setuptools.package-data]
+"read_gage.calibrations" = ["*.mat", "*.csv"]
+"run_gage.from_gage"     = ["*.pyd"]
+
+[tool.pytest.ini_options]
+testpaths = ["run_gage/tests"]
