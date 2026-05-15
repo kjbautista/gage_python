@@ -117,6 +117,7 @@ else
 end
 
 warnedFreqOutOfRange = false;
+fprintf('%s: Reading %d beammap positions...\n', datetime('now'), nPositions)
 for k = 1:nPositions
     posMatrix = local_read_npy(fullfile(positionFiles(k).folder, positionFiles(k).name));
     voltageTrace = mean(posMatrix, 2);   % nSamples x 1
@@ -136,6 +137,9 @@ for k = 1:nPositions
         end
         pressureData_peakPos(i1, i2, i3) = max(pressureTrace);
         pressureData_peakNeg(i1, i2, i3) = min(pressureTrace);
+    end
+    if floor(k / nPositions * 10) > floor((k - 1) / nPositions * 10)
+        fprintf('%s: %d %% complete\n', datetime('now'), round(100 * k / nPositions));
     end
 end
 
