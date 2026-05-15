@@ -186,3 +186,6 @@ run_gage/config.local.json
 
 # VS Code
 .vscode/
+
+# dev folder
+to_do/
